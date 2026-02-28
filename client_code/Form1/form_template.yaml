@@ -1,45 +1,23 @@
 components:
-- event_bindings: {}
-  layout_properties: {grid_position: 'MTSFHZ,XRTPIX'}
-  name: button_1
-  properties: {text: button_1}
-  type: Button
-- event_bindings: {}
-  layout_properties: {grid_position: 'DNZARH,GXJOJS'}
-  name: text_box_1
+- components:
+  - event_bindings: {}
+    layout_properties: {grid_position: 'BPCCLZ,YGCYUZ'}
+    name: button_1
+    properties: {text: button_1}
+    type: Button
+  - layout_properties: {grid_position: 'GBRUHU,HLNBBB'}
+    name: label_1
+    properties: {}
+    type: Label
+  layout_properties: {slot: default}
+  name: content_panel
   properties: {}
-  type: TextBox
-- layout_properties: {grid_position: 'SNNKHB,IMYHPL'}
-  name: logo_img
-  properties:
-    height: 44
-    horizontal_align: left
-    margin: [32, null, null, null]
-    source: 'https://anvil.works/img/svg/anvil-full-black.svg '
-  type: Image
-- layout_properties: {grid_position: 'JTBPXQ,CKHEQT'}
-  name: help_text
-  properties:
-    content: |-
-      Welcome to Anvil's drag-and-drop designer. Let's use it to make this page interactive!
-
-      1. Go to the toolbox on the right (or click **Add Components** on small screens)
-
-      2. Choose the **Filled Button** and drag it onto this page.
-
-      3. Now let's make it do something. Click on the button you just placed, and select `on click event ->`.
-          You're now in Anvil's code editor.
-
-      4. Write some code to change the text on the button when it's clicked!
-          (Example: `self.button_1.text = "Clicked!"`)
-
-      5. Click the **Run** button in the top right.
-
-      ----
-
-      **Want help?**
-
-      Anvil has tons of tutorials and how-to guides. Why don't you start with a quickstart guide? See the **Get Started** section below.
-  type: RichText
-container: {type: ColumnPanel}
+  type: ColumnPanel
+- layout_properties: {slot: nav-right}
+  name: navbar_links
+  properties: {}
+  type: FlowPanel
+container:
+  properties: {html: '@theme:standard-page.html'}
+  type: HtmlTemplate
 is_package: true
