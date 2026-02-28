@@ -7,6 +7,11 @@ components:
     margin: [32, null, null, null]
     source: 'https://anvil.works/img/svg/anvil-full-black.svg '
   type: Image
+- event_bindings: {}
+  layout_properties: {grid_position: 'LLFXZV,XXMOSA'}
+  name: button_1
+  properties: {text: button_1}
+  type: Button
 - layout_properties: {grid_position: 'JTBPXQ,CKHEQT'}
   name: help_text
   properties:
