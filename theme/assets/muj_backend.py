@@ -21,3 +21,9 @@ def pozdrav_z_windows():
     return "Ahoj z tvého Pythonu ve Windows 11!"
 
 anvil.server.wait_forever()
+
+try:
+    print("Uplink je aktivní. Pro ukončení stiskni Ctrl+C.")
+    anvil.server.wait_forever()
+except KeyboardInterrupt:
+    print("\nUplink byl bezpečně ukončen uživatelem.")
