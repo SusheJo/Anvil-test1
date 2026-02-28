@@ -1,6 +1,6 @@
 components:
 - components:
-  - event_bindings: {}
+  - event_bindings: {click: button_1_click}
     layout_properties: {grid_position: 'BPCCLZ,YGCYUZ'}
     name: button_1
     properties: {enabled: true, text: button_1, tooltip: Klikni}
@@ -9,7 +9,7 @@ components:
     name: label_1
     properties: {border: ______, text: Tady jsem.}
     type: Label
-  - event_bindings: {}
+  - event_bindings: {click: button_2_click}
     layout_properties: {grid_position: 'ERAWIT,ZTMORJ'}
     name: button_2
     properties: {text: button_2}
